@@ -94,12 +94,12 @@ function setup() {
 
   
   // create Player sprite
-  // Player = createSprite(100, height-55);
-  // Player.addImage(
-  //   loadImage(
-  //     "imgs/bassket.png"
-  //   )
-  // );
+  Player = createSprite(100, height-55);
+  Player.addImage(
+    loadImage(
+      "imgs/bassket.png"
+    )
+  );
 
 }
 ////////// end of setup /////////////
@@ -144,15 +144,15 @@ function Obj1() {
   
     Object1[j].velocity.y = speed1;
 
-    
-      Object1[j].onMousePressed = function () {
+    if (Player.overlap(Object1[j])) {
+z
       // Move the object
       Object1[j].position.x = -100;
       Object1[j].position.y = -100;
 
       score+=600;
-    }
-    
+
+    } 
     // Reset the objects
     if (Object1[j].position.y > height) {
       Object1[j].position.x = random(0, width);
@@ -165,7 +165,7 @@ function Obj3() {
   
     Object3[j].velocity.y = speed3;
 
-    Object3[j].onMousePressed = function () {
+    if (Player.overlap(Object3[j])) {
 
       // Move the object
       Object3[j].position.x = -100;
@@ -188,7 +188,7 @@ function Obj2() {
   
     Object2[j].velocity.y = speed2;
 
-    Object2[j].onMousePressed = function () {
+    if (Player.overlap(Object2[j])) {
 
       // Move the object
       Object2[j].position.x = -100;
