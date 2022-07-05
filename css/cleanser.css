@@ -1,0 +1,13 @@
+body {
+  background-image: url(../imgs/cleanser.jpg);
+  background-size: 100vw 100vh;
+}
+
+.play-btn {
+  position: absolute;
+  cursor: pointer;
+  left: 41vw;
+  bottom: 7vw;
+  width: 277px;
+  height: 70px;
+}

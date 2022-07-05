@@ -1,0 +1,13 @@
+body {
+  background-image: url(../imgs/start.jpg);
+  background-size: 100vw 100vh;
+}
+
+.start-btn {
+  position: absolute;
+  cursor: pointer;
+  left: 41vw;
+  bottom: 3vw;
+  width: 277px;
+  height: 70px;
+}

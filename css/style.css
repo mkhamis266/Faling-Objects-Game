@@ -1,0 +1,46 @@
+body {
+  background-image: url('../imgs/game-background.jpg');
+  background-size: 100vw 100vh;
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  width: 100vw;
+  height: 100vh;
+  top: 0%;
+  left: 0%;
+}
+
+#header{
+  width: 100vw;
+  height: 80px;
+  background-image: url('../imgs/header_01.png');
+  background-size: 100vw 80px;
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  top: 0%;
+  left: 0%;
+}
+
+#playpanle{
+  position: absolute;
+  top: 12vh;
+  left: 0;
+  width: 100vw;
+  height: 76%;
+}
+
+#footer{
+  width: 100vw;
+  height: 80px;
+  background-image: url('../imgs/footer_03.png');
+  background-size: 100vw 80px;
+  background-repeat: no-repeat;
+  position: absolute;
+  padding: 0;
+  margin: 0;
+  bottom: 0%;
+  left: 0%;
+}

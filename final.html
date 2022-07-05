@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/final.css">
+  <title>Document</title>
+  <link rel="icon" type="image/vnd.microsoft.icon" href="images/bayer.ico" />
+
+</head>
+
+<body>
+  <div class="scoure">
+    000
+  </div>
+  <div class="restart-btn" onclick="restart()"></div>
+</body>
+
+
+<script>
+  function getScoure() {
+    document.getElementsByClassName('scoure')[0].innerHTML = localStorage.getItem('score')
+    console.log(document.getElementsByClassName('scoure')[0].innerHTML);
+  }
+  window.onload = getScoure();
+</script>
+<script>
+  function restart() {
+    localStorage.clear()
+    window.location = 'index.html'
+  }
+</script>
+
+</html>
