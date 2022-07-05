@@ -145,7 +145,7 @@ function Obj1() {
     Object1[j].velocity.y = speed1;
 
     if (Player.overlap(Object1[j])) {
-z
+
       // Move the object
       Object1[j].position.x = -100;
       Object1[j].position.y = -100;
